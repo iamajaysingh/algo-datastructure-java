@@ -13,6 +13,9 @@ public class Solution
 			String pattern = in.nextLine();
           	//Write your code
               try{
+		      //this method generate the pattern object 
+		      // Match m =pat.match(string s);
+		      //
               Pattern pat=Pattern.compile(pattern);
               
                
