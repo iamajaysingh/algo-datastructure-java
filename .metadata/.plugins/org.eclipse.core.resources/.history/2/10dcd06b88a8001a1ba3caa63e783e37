@@ -1,0 +1,23 @@
+package comparable_comparator;
+import java.lang.Comparable;
+
+public class Movie implements Comparable<Movie> {
+	
+	int ratng;
+	String name;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+
+	@Override
+	public int compareTo(Movie o) {
+		// TODO Auto-generated method stub
+		
+		return 0;
+	}
+
+}

@@ -1,0 +1,71 @@
+package comparable_comparator;
+
+import java.lang.Comparable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Movie implements Comparable<Movie> {
+
+	private double ratng;
+	private String name;
+	private int year;
+
+	public Movie(double ratng, String name, int year) {
+		super();
+		this.ratng = ratng;
+		this.name = name;
+		this.year = year;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Movie> list = new ArrayList<Movie>();
+		Movie m = new  Movie(3.5,"m1",5);
+		Movie m1 = new  Movie(4.5,"m2",6);
+		Movie m2 = new  Movie(9.6,"m4",4);
+		Movie m3 = new  Movie(3.2,"m6",57);
+		Movie m4 = new  Movie(3.5,"m7",8);
+		Movie m5 = new  Movie(4.8,"m8",3);
+		Movie m6 = new  Movie(2.5,"m9",10);
+		
+		Collections.sort(list);
+		
+		for(Movie sortMovie : list)
+			System.out.println(sortMovie.getName()+"++"+sortMovie.getYear());
+
+	}
+
+	public double getRatng() {
+		return ratng;
+	}
+
+	public void setRatng(double ratng) {
+		this.ratng = ratng;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	@Override
+	public int compareTo(Movie o) {
+		// TODO Auto-generated method stub
+
+		return this.year - o.year;
+	}
+
+}

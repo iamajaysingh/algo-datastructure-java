@@ -1,0 +1,48 @@
+package linklist;
+
+public class LinkList<T extends Comparable<T>> implements List<T>{
+	
+	private Node<T> root;
+	private int sizeOfList;
+
+	@Override
+	public void insert(T data) {
+		// TODO Auto-generated method stub
+		++this.sizeOfList;
+		if(root==null) {
+			this.root = new Node<>(data);
+		}
+		else {
+			
+			atTheBegining(data);
+		}
+		
+		
+	}
+
+	private void atTheBegining(T data) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removed(T data) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void traversalList() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+
+}

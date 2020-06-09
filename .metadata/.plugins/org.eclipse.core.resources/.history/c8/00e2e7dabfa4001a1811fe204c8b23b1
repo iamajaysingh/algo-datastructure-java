@@ -1,0 +1,15 @@
+package linklist;
+
+public class Node< T extends Comparable<T>> {
+	
+	private T data;
+	private Node<T> nextNode;
+	
+	Node(T date){
+		
+		this.data=date;
+	}
+	
+	
+
+}

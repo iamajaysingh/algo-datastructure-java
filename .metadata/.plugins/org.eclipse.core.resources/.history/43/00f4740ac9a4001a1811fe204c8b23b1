@@ -1,0 +1,29 @@
+package linklist;
+
+public class LinkList implements List{
+
+	@Override
+	public void insert(Object data) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removed(Object data) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void traversalList() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

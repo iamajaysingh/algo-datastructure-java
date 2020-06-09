@@ -1,0 +1,7 @@
+package linklist;
+
+public class LinkList<T extends Comparable<T>> implements List<T>{
+
+	
+
+}
